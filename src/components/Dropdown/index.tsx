@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Picture from '../Picture'
 
 const Dropdown = () => {
-  const [meat, setMeat] = useState('heo')
+  const [meat, setMeat] = useState('')
 
   function changeOption(event: React.ChangeEvent<HTMLSelectElement>): void {
     setMeat(event.target.value)
@@ -23,6 +23,7 @@ const Dropdown = () => {
     if (meat === 'ga') {
       return <Picture link="https://www.vissan.com.vn/images/2014/dui_ga_goc_tu_1_s_1.jpg" title="Thịt gà" />
     }
+    if (meat ==='chay'){
     return (
       <Picture
         link="https://congthuong.vn/stores/news_dataimages/mn_thao/052021/11/08/4336_Rau_xanh.jpg?rt=20210511084337"
@@ -30,13 +31,16 @@ const Dropdown = () => {
       />
     )
   }
+  return null
+}
 
   const ListOption = () => {
     return (
       <div>
         <form>
           <label className="lable-content">Loại thịt bạn muốn ăn: </label>
-          <select id="meats" name="meat" onChange={changeOption} value={meat} placeholder="--Chọn loại thịt--">
+          <select id="meats" name="meat" onChange={changeOption} value={meat}>
+            <option value="">--Chọn loại thịt--</option>
             <option value="heo">Thịt heo</option>
             <option value="bo">Thịt bò</option>
             <option value="ga">Thịt gà</option>

@@ -14,7 +14,7 @@ const HomePage = () => {
 
   return (
     <div>
-      <span onClick={toggleLoading}>HOME PAGE</span>
+      <span onClick={toggleLoading}>CHỌN THỊT</span>
       <Dropdown />
     </div>
   )
