@@ -1,20 +1,20 @@
-img{
+img {
   width: 600px;
   height: 400px;
   padding: 30px;
 }
-.lable-content{
+.lable-content {
   color: blueviolet;
   font-weight: bold;
   font-size: 30px;
 }
-body{
+body {
   text-align: center;
   margin-top: 40px;
 }
-#meats{
- font-size: 23px;
- border: 2px gray solid;
- padding: 3px;
- border-radius: 10px;
+#meats {
+  font-size: 23px;
+  border: 2px gray solid;
+  padding: 3px;
+  border-radius: 10px;
 }

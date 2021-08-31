@@ -1,8 +1,8 @@
-import { Provider as MobxProvider } from 'mobx-react'
-import { BrowserRouter } from 'react-router-dom'
-import Router from './Router'
-import { rootStore } from './stores'
-import './App.css'
+import { Provider as MobxProvider } from "mobx-react";
+import { BrowserRouter } from "react-router-dom";
+import Router from "./Router";
+import { rootStore } from "./stores";
+import "./App.css";
 
 const App = () => {
   return (
@@ -11,7 +11,7 @@ const App = () => {
         <Router />
       </BrowserRouter>
     </MobxProvider>
-  )
-}
+  );
+};
 
-export default App
+export default App;

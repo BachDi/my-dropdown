@@ -1,9 +1,9 @@
-import { makeAutoObservable } from 'mobx'
-import { RootStore } from '.'
+import { makeAutoObservable } from "mobx";
+import { RootStore } from ".";
 
 class SpinnerStore {
-  isLoading = false
-  rootStore: RootStore
+  isLoading = false;
+  rootStore: RootStore;
 
   constructor(rootStore: RootStore) {
     //TODO: may need in some special case
@@ -13,20 +13,20 @@ class SpinnerStore {
     //   hideLoading: action,
     // })
 
-    this.rootStore = rootStore
-    makeAutoObservable(this)
+    this.rootStore = rootStore;
+    makeAutoObservable(this);
   }
 
   showLoading(): void {
-    this.isLoading = true
+    this.isLoading = true;
   }
 
   hideLoading() {
-    this.isLoading = false
+    this.isLoading = false;
   }
 
   toggleLoading() {
-    this.isLoading = !this.isLoading
+    this.isLoading = !this.isLoading;
   }
 }
-export default SpinnerStore
+export default SpinnerStore;

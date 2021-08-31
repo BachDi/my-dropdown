@@ -1,7 +1,7 @@
 const routes = {
   home: {
-    value: '/'
-  }
-}
+    value: "/",
+  },
+};
 
-export default routes
+export default routes;
